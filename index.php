@@ -36,6 +36,7 @@ foreach ($pokemons as $pokemon) {
             <img src="<?php echo $pokemon['image'];?>" class="img-fluid">
             <p><?php echo $pokemon['nameFr']; ?></p>
             <p><?php echo $pokemon['id']; ?></p>
+            <a href="pokemon-detail.php">Plus de détail</a>
         </div>
  <?php   
 } 
