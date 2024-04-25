@@ -3,7 +3,7 @@
 
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-                <a class="nav-link" href="https://localhost/pokedex-pe9/index.php">Home</a>
+                <a class="nav-link" href="http://localhost/pokedex/index.php">Home</a>
             </li>
         </ul>
     </div>
