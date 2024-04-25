@@ -1,6 +1,12 @@
 <?php
 require_once("utils/connectDB.php");
 $title = "Pokedex !";
+
+$passHash = password_hash("admin", PASSWORD_DEFAULT);
+echo($passHash);
+
+var_dump(password_verify("admin","$passHash"));
+
 //inclure le header//
 include_once("block/header.php");
 ?>
@@ -22,7 +28,7 @@ $pokemons = $reponse->fetchAll();
 ?>
 
 <div class="container">
-    <div class="d-flex justify-content-around  align-items-center flex-wrap gap-4">
+    <div class="d-flex justify-content-around  align-items-center flex-wrap gap-6">
 <?php 
 //parcourir chaque Pokémon récupéré de la base de données//
 foreach ($pokemons as $pokemon) {  
