@@ -31,9 +31,9 @@ if (
 
             $_SESSION["username"] = $_POST["username"];
 
-            header("Location: https://localhost/pokedex/admin.php");
+            header("Location: https://localhost/pokedex/admin/index.php");
         }
-        elseif {
+        else {
             $errors["global"] = "Identifiants invalides";
         }
         else {
